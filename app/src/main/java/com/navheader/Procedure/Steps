@@ -49,4 +49,4 @@ g.2) Making the status bar Transperent
       for API greater than 21 styles.xml(v21) will be used.
 
       android:fitsSystemWindows="true"  If we use this tag means it will show transperent.Do some R & D on this..
-
+      Find wat this attribute will do..
