@@ -1,3 +1,5 @@
+Video URL:- https://www.youtube.com/watch?v=Xlj_haZ9rW0&list=PLj76U7gxVixTaNdYkUWZ5haV73otko4qL
+
 Navigation Drawer Steps
 
 a)Add Material depedency design (https://material.io/develop/android/docs/getting-started/)
@@ -15,3 +17,8 @@ c)<com.google.android.material.navigation.NavigationView
 
 d)b)com.google.android.material.navigation.NavigationView
  should be added at the end Tag in DrawerLayout or else it wont work.
+
+e)Add the separate Header layout in the XML.
+ android:theme="@style/ThemeOverlay.AppCompat.Dark"   Using this theme will make the Text color by default white.
+
+f)Add app:headerLayout="@layout/nav_header" tag in the nav_drawer_layout in the XML.

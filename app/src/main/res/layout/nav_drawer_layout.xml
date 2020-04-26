@@ -22,6 +22,7 @@
         android:layout_height="match_parent"
         app:menu="@menu/nav_items"
         android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
         >
     </com.google.android.material.navigation.NavigationView>
 
