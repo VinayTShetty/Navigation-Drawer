@@ -1,0 +1,17 @@
+Navigation Drawer Steps
+
+a)Add Material depedency design (https://material.io/develop/android/docs/getting-started/)
+ implementation 'com.google.android.material:material:<version>'
+ implementation 'com.google.android.material:material:+'   // After sync right click to replace with specific version it will automaticallly add the latest version.
+
+b)res---> New Android Resource Directory--->Resource type menu
+  res--->menu-->new Resource file ----nav_items.
+
+c)<com.google.android.material.navigation.NavigationView
+  Add this tag as it not avaliable in Auto suggestions
+ android:layout_gravity="start" // open from left
+ android:layout_gravity="end"  //open from Right
+ android:layout_gravity="center"// center
+
+d)b)com.google.android.material.navigation.NavigationView
+ should be added at the end Tag in DrawerLayout or else it wont work.

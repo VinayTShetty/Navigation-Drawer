@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/backkup"
+            android:icon="@drawable/ic_backup_black_24dp"
+            android:title="inbox"
+            />
+        <item
+            android:id="@+id/lens"
+            android:icon="@drawable/ic_color_lens_black_24dp"
+            android:title="lens"
+            />
+        <item
+            android:id="@+id/grade"
+            android:icon="@drawable/ic_grade_black_24dp"
+            android:title="inbox"
+            />
+    </group>
+
+
+    <!--Nested Group-->
+
+                    <item
+                         android:title="Communicate"
+                        >
+                        <menu>
+                            <item
+                                    android:id="@+id/hdr"
+                                    android:icon="@drawable/ic_hdr_on_black_24dp"
+                                    android:title="HDR"
+                                />
+                            <item
+                                android:id="@+id/pantool"
+                                android:icon="@drawable/ic_pan_tool_black_24dp"
+                                android:title="Pan Tool"
+                                />
+                        </menu>
+
+                    </item>
+
+</menu>
