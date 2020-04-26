@@ -22,3 +22,31 @@ e)Add the separate Header layout in the XML.
  android:theme="@style/ThemeOverlay.AppCompat.Dark"   Using this theme will make the Text color by default white.
 
 f)Add app:headerLayout="@layout/nav_header" tag in the nav_drawer_layout in the XML.
+
+g)Remvoe the default action bar and add tool bar.
+        Making the status bar Transperent
+        Navigation Drawer Above the action bar(default).
+        Making the default Animation with Hanburger icon.
+
+
+g.1)
+    Remvoe the default action bar and add tool bar:-
+    In styles.xml create a theme with no action bar which inheriites the property of default action bar and change some properties.
+    Apply that theme for MainActivity in Manifest file.
+    Add toolbar tag to MainActivity_xml
+
+g.2) Making the status bar Transperent
+      In styles.xml make add one more tag <item name="android:statusBarColor">@android:color/transparent</item>
+      Afer adding this tag it will give waring that it will work on API level 21.
+      Here in this project min SDK is 19.if min SDK is 21 then no need to add version for styles.xml.
+      Procedure is create one more file styles.xml
+
+      <item name="android:statusBarColor">@android:color/transparent</item> this will work above API level 21.
+      To make it backward compatibility add one more styles.xml version file
+      Then remove the tag which added in styles.xml and add those in styles.xml 21 version(video 3 18:35)
+
+      for API less than 21 styles.xml will be used.
+      for API greater than 21 styles.xml(v21) will be used.
+
+      android:fitsSystemWindows="true"  If we use this tag means it will show transperent.Do some R & D on this..
+
